@@ -10,14 +10,11 @@
       ./hardware-configuration.nix
       ./modules/system/gnome.nix
       ./modules/system/packages.nix
+      ./modules/system/boot.nix
     ];
     
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
-
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   # networking.hostName = "nixos"; # Define your hostname.
 
@@ -38,16 +35,6 @@
   #   keyMap = "us";
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
-
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
-
-
-  
-
-  # Configure keymap in X11
-  # services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
@@ -75,17 +62,7 @@
     ];
   };
 
-  # programs.firefox.enable = true;
-
   nix.settings.experimental-features = "nix-command flakes";
-
-  # List packages installed in system profile.
-  # You can use https://search.nixos.org/ to find more packages (and options).
-  # environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-  #  fastfetch
-  # ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
