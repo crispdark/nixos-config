@@ -4,11 +4,10 @@
   programs.git = {
     enable = true;
 
-    userName = "Edoardo Piscitelli";
-    userEmail = "haxagd@gmail.com";
-
-    extraConfig = {
+    settings = {
       safe.directory = "/etc/nixos";
+      user.name = "Edoardo Piscitelli";
+      user.email = "haxagd@gmail.com";
     };
   };  
 }
