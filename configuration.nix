@@ -18,6 +18,7 @@
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
 
+  time.timeZone = "Europe/Rome";
 
   # Select internationalisation properties.
   # i18n.defaultLocale = "en_US.UTF-8";
