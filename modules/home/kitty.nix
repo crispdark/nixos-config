@@ -4,9 +4,12 @@
   programs.kitty = {
     enable = true;
 
+    font = {
+      name = "MesloLGS Nerd Font";
+      size = "14";
+
     settings = {
       background_opacity = "0.9";
-      wayland_titlebar_color = "system";
     };
    
    extraConfig = ''
