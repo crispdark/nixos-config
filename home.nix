@@ -11,6 +11,7 @@
   imports = [
     ./modules/home/git.nix
     ./modules/home/kitty.nix
+    ./modules/home/zsh.nix
   ];
 
  #  nixpkgs = {
