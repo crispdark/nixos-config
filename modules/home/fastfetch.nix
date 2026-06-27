@@ -1,0 +1,91 @@
+{ ... }:
+
+{
+  programs.fastfetch = {
+    enable = true;
+
+    settings = {
+      "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
+
+      logo = {
+        source = ../../assets/fastfetch/NixOs.png;
+        padding = {
+          right = 1;
+        };
+      };
+
+      display = {
+        bar = {
+          char.total = "─";
+          width = 10;
+        };
+
+        percent = {
+          type = 3;
+          ndigits = 2;
+        };
+
+        key.width = 5;
+        separator = "";
+      };
+
+      modules = [
+        {
+          type = "custom";
+          key = "╭──────────────────────────────╮";
+        }
+        {
+          type = "title";
+          key = "│                             │";
+          keyColor = "white";
+          format = "{#white}{1}@{2}";
+        }
+        {
+          type = "custom";
+          key = "╰──────────────────────────────╯";
+        }
+        {
+          type = "os";
+          key = " {#blue} ";
+          format = "{2}";
+        }
+        {
+          type = "wm";
+          key = " {#blue} ";
+          format = "{1} {5}";
+        }
+        {
+          type = "packages";
+          key = " {#blue}󰏖 ";
+        }
+        {
+          type = "uptime";
+          key = " {#cyan}󰥔 ";
+        }
+        {
+          type = "terminal";
+          key = " {#cyan} ";
+        }
+        {
+          type = "cpu";
+          key = " {#cyan} ";
+          format = "{1} [{3} cores]";
+        }
+        {
+          type = "gpu";
+          key = " {#green}󰢮 ";
+          format = "{2}";
+        }
+        {
+          type = "memory";
+          key = " {#green} ";
+        }
+        {
+          type = "disk";
+          key = " {#green} ";
+          format = "{13} {1} / {2} ({3})";
+        }
+      ];
+    };
+  };
+}
