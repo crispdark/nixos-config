@@ -1,0 +1,28 @@
+{
+  description = "NixOS configuration";
+
+  inputs = {
+    # Use `nix flake update` to update the flake to the latest revision of the chosen release channel.
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    home-manager.url = "github:nix-community/home-manager";
+  };
+
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
+    nixosConfigurations = {
+      nixos = nixpkgs.lib.nixosSystem {
+        system = "aarch64-linux";
+        modules = [
+          ./configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.users.crispdark = ./home.nix;
+          }
+        ];
+      };
+    };
+  };
+}
+
