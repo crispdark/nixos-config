@@ -7,6 +7,10 @@
 
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
+
+    shellAliases = {
+      rebuild-switch = "sudo nixos-rebuild switch --flake /etc/nixos#nixos";
+    };
   };
 
   home.packages = with pkgs; [
