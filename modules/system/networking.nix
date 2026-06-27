@@ -2,7 +2,7 @@
 
 {
   networking.hostName = "nixos";
-  networking.networkManager.enable = true;
+  networking.networkmanager.enable = true;
   time.timeZone = "Europe/Rome";
   networking.firewall.enable = false;
 }
