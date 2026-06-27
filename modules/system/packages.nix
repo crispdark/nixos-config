@@ -5,7 +5,6 @@
     neovim
     wget
     fastfetch
-    git
     firefox 
   ];
 }
