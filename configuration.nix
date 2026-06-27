@@ -12,6 +12,7 @@
       ./modules/system/packages.nix
       ./modules/system/boot.nix
       ./modules/system/networking.nix
+      ./modules/system/services.nix
     ];
     
   system.autoUpgrade.enable = true;
@@ -26,16 +27,6 @@
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
 
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
-
-  # Enable sound.
-  # services.pulseaudio.enable = true;
-  # OR
-  # services.pipewire = {
-  #   enable = true;
-  #   pulse.enable = true;
-  # };
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
