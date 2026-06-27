@@ -13,6 +13,7 @@
       ./modules/system/boot.nix
       ./modules/system/networking.nix
       ./modules/system/services.nix
+      ./modules/system/users.nix
     ];
     
   system.autoUpgrade.enable = true;
@@ -33,17 +34,7 @@
   # services.libinput.enable = true;
 
   programs.zsh.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.crispdark = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs.zsh;
-    packages = with pkgs; [
-      tree
-    ];
-  };
-
+ 
   nix.settings.experimental-features = "nix-command flakes";
 
   # Some programs need SUID wrappers, can be configured further or are
