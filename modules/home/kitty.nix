@@ -6,7 +6,7 @@
 
     font = {
       name = "MesloLGS Nerd Font";
-      size = "14";
+      size = 14;
     };
 
     settings = {
