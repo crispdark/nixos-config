@@ -6,6 +6,7 @@
 
     settings = {
       background_opacity = "0.9";
+      wayland_titlebar_color = "system";
     };
    
    extraConfig = ''
