@@ -10,6 +10,7 @@
   # You can import other home-manager modules here
   imports = [
     ./modules/home/git.nix
+    ./modules/home/kitty.nix
   ];
 
  #  nixpkgs = {
