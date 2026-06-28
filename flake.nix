@@ -5,6 +5,7 @@
     # Use `nix flake update` to update the flake to the latest revision of the chosen release channel.
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
+    lazyvim.url = "github:pfassina/lazyvim-nix";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {

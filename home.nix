@@ -13,6 +13,7 @@
     ./modules/home/kitty.nix
     ./modules/home/zsh.nix
     ./modules/home/fastfetch.nix
+    ./modules/home/neovim.nix
   ];
 
  #  nixpkgs = {
