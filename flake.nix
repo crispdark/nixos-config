@@ -6,6 +6,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     lazyvim.url = "github:pfassina/lazyvim-nix";
+    iloader.url = "github:nab138/iloader";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {

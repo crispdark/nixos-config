@@ -12,6 +12,7 @@
     ./modules/home/fastfetch.nix
     ./modules/home/neovim.nix
     ./modules/home/gnome.nix
+    ./modules/home/iloader.nix
   ];
 
   home = {
