@@ -17,5 +17,23 @@
         "nightthemeswitcher@romainvigier.fr"
       ];
     };
+
+    "org/gnome/desktop/wm/preferences" = {
+      button-layout = "appmenu:minimize,maximise,close";
+    };
+  };
+
+  gtk = {
+    enable = true;
+
+    iconTheme = {
+      name = "Papirus";
+      package = pkgs.papirus-icon-theme;
+    };
+
+    cursorTheme = {
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
+    };
   };
 }
