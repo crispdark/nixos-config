@@ -2,7 +2,7 @@
 
 {
   home.packages = [
-    usbmuxd
+    pkgs.usbmuxd
     inputs.iloader.packages.${pkgs.system}.iloader
   ];
 }
