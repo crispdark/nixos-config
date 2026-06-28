@@ -1,7 +1,7 @@
 { inputs, ... }:
 
 {
-  imports = [ lazyvim.homeManagerMoudles.default ];
+  imports = [ lazyvim.homeManagerModules.default ];
   programs.lazyvim = {
     enable = true;
   };
