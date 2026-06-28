@@ -5,6 +5,7 @@
 {
   # You can import other home-manager modules here
   imports = [
+    ./modules/home/packages.nix
     ./modules/home/git.nix
     ./modules/home/kitty.nix
     ./modules/home/zsh.nix
