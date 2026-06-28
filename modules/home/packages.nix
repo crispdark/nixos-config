@@ -7,5 +7,7 @@
     vesktop
     telegram-desktop
     brave
+    libreoffice
+    rclone
   ];
 }
