@@ -2,7 +2,7 @@
 
 {
   imports = [ lazyvim.homeManagerMoudles.default ];
-  programs.lazyvim {
+  programs.lazyvim = {
     enable = true;
   };
 }
