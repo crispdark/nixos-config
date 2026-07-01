@@ -5,6 +5,5 @@
     wget
     firefox
     tree
-    zsh
   ];
 }
