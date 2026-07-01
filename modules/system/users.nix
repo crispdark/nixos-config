@@ -4,6 +4,6 @@
   users.users.crispdark = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
-    shell = "${pkgs.zsh}/bin/zsh";
+    shell = pkgs.zsh;
   };
 }
