@@ -8,7 +8,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      rebuild-switch -vm = "sudo nixos-rebuild switch --flake /etc/nixos#vm";
+      rebuild-switch-vm = "sudo nixos-rebuild switch --flake /etc/nixos#vm";
     };
 
     initContent = ''
