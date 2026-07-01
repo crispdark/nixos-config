@@ -8,13 +8,13 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./modules/system/gnome.nix
-      ./modules/system/packages.nix
-      ./modules/system/boot.nix
-      ./modules/system/networking.nix
-      ./modules/system/services.nix
-      ./modules/system/users.nix
-      ./modules/system/internationalisation.nix
+      ./boot.nix
+      ../../modules/system/gnome.nix
+      ../../modules/system/packages.nix
+      ../../modules/system/networking.nix
+      ../../modules/system/services.nix
+      ../../modules/system/users.nix
+      ../../modules/system/internationalisation.nix
     ];
     
   system.autoUpgrade.enable = true;

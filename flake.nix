@@ -11,7 +11,7 @@
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      vm = nixpkgs.lib.nixosSystem {
         system = "aarch64-linux";
         modules = [
           ./configuration.nix
