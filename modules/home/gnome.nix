@@ -21,6 +21,10 @@
     "org/gnome/desktop/wm/preferences" = {
       button-layout = "appmenu:minimize,maximize,close";
     };
+
+    "org/gnome/desktop/peripherals/mouse" = {
+        accel-profile = "flat";
+    };
   };
 
   gtk = {
