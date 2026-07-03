@@ -8,8 +8,8 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      rebuild-switch-macmini = "sudo nixos-rebuild switch --flake /etc/nixos#macmini";  
-      rebuild-switch-vm = "sudo nixos-rebuild switch --flake /etc/nixos#vm";
+      rebuild-switch-macmini = "sudo nixos-rebuild switch --flake /home/crispdark/nixos#macmini";  
+      rebuild-switch-vm = "sudo nixos-rebuild switch --flake /home/crispdark/nixos#vm";
     };
 
     initContent = ''
