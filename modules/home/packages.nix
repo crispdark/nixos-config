@@ -7,5 +7,6 @@
     telegram-desktop
     libreoffice
     rclone
+    (chromium.override { enableWideVine = true; })
   ];
 }
