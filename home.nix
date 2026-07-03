@@ -13,7 +13,7 @@
     ./modules/home/neovim.nix
     ./modules/home/gnome.nix
     ./modules/home/iloader.nix
-    ./modules/home/firefox.nix
+    ./modules/home/chromium.nix
   ];
 
   home = {

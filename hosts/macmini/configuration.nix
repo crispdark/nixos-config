@@ -31,6 +31,8 @@
   # Enable flakes
   nix.settings.experimental-features = "nix-command flakes";
 
+  # Allow unfree software
+  nixpkgs.config.allowUnfree = true;
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
   # accidentally delete configuration.nix.
