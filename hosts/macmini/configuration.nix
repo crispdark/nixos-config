@@ -17,6 +17,7 @@
       ../../modules/system/services.nix
       ../../modules/system/users.nix
       ../../modules/system/internationalisation.nix
+      ../../modules/system/zram.nix
     ];
     
   system.autoUpgrade.enable = true;
