@@ -5,7 +5,7 @@
     prismlauncher
     keepassxc
     telegram-desktop
-    ungoogled-chromium
+    firefox
     libreoffice
     rclone
   ];
