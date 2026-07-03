@@ -53,9 +53,12 @@ color14 #a4ffff
 color7  #f8f8f2
 color15 #ffffff
 
-# Cursor colors
+# Cursor 
 cursor            #f8f8f2
 cursor_text_color background
+cursor_trail 3 
+cursor_trail_start_threshold 0 
+cursor_trail_decay 0.1 0.4 
 
 # Tab bar colors
 active_tab_foreground   #282a36
