@@ -8,5 +8,6 @@
     libreoffice
     rclone
     (chromium.override { enableWideVine = true; })
+    htop
   ];
 }
