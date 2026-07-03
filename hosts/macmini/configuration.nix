@@ -25,8 +25,10 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
  
+  # Enable zsh
   programs.zsh.enable = true;
 
+  # Enable flakes
   nix.settings.experimental-features = "nix-command flakes";
 
   # Copy the NixOS configuration file and link it from the resulting system
