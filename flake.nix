@@ -24,6 +24,19 @@
           }
         ];
       };
+      macmini = nixpkgs.lib.nixosSystem {
+        system = "aarch64-linux";
+        modules = [
+          ./hosts/macmini/configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.users.crispdark = ./home.nix;
+          }
+        ];
+      };
     };
   };
 }

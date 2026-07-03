@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./boot.nix
       ./apple-silicon-support
+      ./asahi.nix
       ../../modules/system/gnome.nix
       ../../modules/system/packages.nix
       ../../modules/system/networking.nix
