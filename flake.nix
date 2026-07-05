@@ -7,6 +7,7 @@
     home-manager.url = "github:nix-community/home-manager";
     lazyvim.url = "github:pfassina/lazyvim-nix";
     iloader.url = "github:nab138/iloader";
+    purefetch.url = "github:ooonea/purefetch";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {

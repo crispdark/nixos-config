@@ -206,12 +206,47 @@
         "type": "github"
       }
     },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1782959384,
+        "narHash": "sha256-xnJJk+ct+D2+wdRxj1wk36w5zV9RVESwRqcklPdt3fM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "65179426c83bb3f6bc14898b42ea1c6f01d374b0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "purefetch": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_5"
+      },
+      "locked": {
+        "lastModified": 1783204052,
+        "narHash": "sha256-lsH4oeUM1V/FlRbrCsqwjVPetoCC8gWfzwTIRvh6sAs=",
+        "owner": "ooonea",
+        "repo": "purefetch",
+        "rev": "ccf2c006086965ace5ec9f7b986a8fe5d2b46564",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ooonea",
+        "repo": "purefetch",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "iloader": "iloader",
         "lazyvim": "lazyvim",
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_4",
+        "purefetch": "purefetch"
       }
     },
     "systems": {
