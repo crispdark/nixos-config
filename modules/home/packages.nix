@@ -9,5 +9,7 @@
     rclone
     (chromium.override { enableWideVine = true; })
     htop
+    element-desktop 
+    localsend
   ];
 }
