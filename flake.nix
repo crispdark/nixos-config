@@ -8,6 +8,7 @@
     lazyvim.url = "github:pfassina/lazyvim-nix";
     iloader.url = "github:nab138/iloader";
     purefetch.url = "github:ooonea/purefetch";
+    dfetch.url = "/home/crispdark/Scaricati/Dfetch/";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {

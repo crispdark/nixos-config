@@ -11,5 +11,6 @@
     htop
     element-desktop
     vesktop
+    vscode
   ];
 }

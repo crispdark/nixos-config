@@ -14,6 +14,7 @@
     ./modules/home/gnome.nix
     ./modules/home/iloader.nix
     ./modules/home/purefetch.nix
+    ./modules/home/dfetch.nix
   ];
 
   home = {
