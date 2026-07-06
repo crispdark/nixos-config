@@ -32,14 +32,17 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1783326011,
-        "narHash": "sha256-C8mn3Lln1rLTdT4IiXhQDAxbQGyuiZqu18Um28Ccazk=",
-        "path": "/home/crispdark/Scaricati/Dfetch/",
-        "type": "path"
+        "lastModified": 1783329798,
+        "narHash": "sha256-m3Z7QaSDKCLUr/eEtb3CzsoQ3mZYJn8FybKUdsMMgro=",
+        "owner": "David17c",
+        "repo": "Dfetch",
+        "rev": "484ed266d01581c53725cebf5865dab17c4c7854",
+        "type": "github"
       },
       "original": {
-        "path": "/home/crispdark/Scaricati/Dfetch/",
-        "type": "path"
+        "owner": "David17c",
+        "repo": "Dfetch",
+        "type": "github"
       }
     },
     "flake-compat": {
